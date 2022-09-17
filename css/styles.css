@@ -23,28 +23,23 @@
   box-sizing: border-box;
 }
 
-/* html {
-  font-size: 62.5%;
-} */
-
 body {
+  background-color: var(--Cream);
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 110vh;
 }
 
-/* 610px or  */
-
 .main {
+  box-sizing: border-box;
   width: 21.6em;
-  min-height: 38em;
+  height: 38.125em;
   background-color: var(--White);
-  border-radius: 10px;
+  border-radius: 0.625em;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  border: 1px solid black;
 }
 
 .article {
@@ -52,7 +47,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .main__image {
@@ -64,19 +59,69 @@ body {
 
 .text {
   width: 18.44em;
-  height: 12.2em;
-  border: 1px solid black;
+  height: 12em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.text__preview {
+  font-family: "Montserrat", sans-serif;
+  color: var(--Dark_grayish_blue);
+  letter-spacing: 0.31rem;
+  font-size: 0.875rem;
+}
+
+.text__h1 {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.text__p {
+  font-size: 0.875rem;
+  font-family: "Montserrat", sans-serif;
+  color: var(--Dark_grayish_blue);
 }
 
 .price {
   display: flex;
-  border: 1px solid black;
+  align-items: center;
   width: 18.44em;
-  height: 1.56em;
+}
+
+.price__new-price {
+  font-size: 2rem;
+  font-family: "Fraunces", serif;
+  color: var(--Dark_cyan);
+  margin-right: 0.8em;
+}
+
+.price__old-price {
+  font-family: "Montserrat", sans-serif;
+  text-decoration: line-through;
+  color: var(--Dark_grayish_blue);
+  font-size: 0.75rem;
 }
 
 .button {
-  border: 1px solid black;
-  width: 22.44em;
-  height: 3.12em;
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--Dark_cyan);
+  border-radius: 0.62em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 22.3em;
+  height: 3.2em;
+}
+
+.button__span {
+  color: var(--White);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.button__image {
+  width: 0.75em;
+  margin-right: 0.625em;
 }
