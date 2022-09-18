@@ -33,8 +33,8 @@ Mobile version
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution URL here](https://github.com/AlanLopRey/product-preview-card-2)
+- Live Site URL: [Live site URL here](https://alanloprey.github.io/product-preview-card-2/)
 
 ## My process
 
