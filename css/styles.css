@@ -29,6 +29,7 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 110vh;
+  min-width: 375px;
 }
 
 .main {
@@ -74,12 +75,14 @@ body {
 
 .text__h1 {
   font-family: "Fraunces", serif;
-  font-weight: 700;
   font-size: 2rem;
+  line-height: 2rem;
+  font-weight: 700;
 }
 
 .text__p {
   font-size: 0.875rem;
+  line-height: 1.35rem;
   font-family: "Montserrat", sans-serif;
   color: var(--Dark_grayish_blue);
 }
@@ -124,4 +127,44 @@ body {
 .button__image {
   width: 0.75em;
   margin-right: 0.625em;
+}
+
+@media screen and (min-width: 1440px) {
+  .main {
+    width: 37.5em;
+    height: 28.125em;
+    flex-direction: row;
+  }
+
+  .main__image {
+    background-image: url(../images/image-product-desktop.jpg);
+    width: 18.75em;
+    height: 28.125em;
+  }
+
+  .article {
+    width: 18.75em;
+    height: 28.125em;
+    justify-content: space-around;
+  }
+
+  .text {
+    width: 14.8125em;
+    height: 15em;
+    margin-top: 0.5em;
+  }
+
+  .price {
+    width: 14.8125em;
+  }
+
+  .button {
+    width: 17.8125em;
+    margin-bottom: 1em;
+  }
+
+  .button:hover {
+    background-color: #004334;
+    cursor: pointer;
+  }
 }
